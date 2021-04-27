@@ -1,7 +1,7 @@
 export const state = () => ({
   mainData: {
     grikoSummary: `
-    C'erano una volta un padre e tre figli. Il padre mandò il primo figlio a far pascolare la capra e disse che se la capra non è sazia lo avrebbe ucciso. La capra ha mangiato a volontà ma alla fine dice al padrone: A digiuno tutto il giorno, con la fune stretta al collo, sotto un albero d’ulivo dal mattino al mio ritorno. Così morì il primo e il secondo.
+    C'erano una volta un padre e tre figli. Il padre mandò il primo figlio a far pascolare la capra e lo avvisò che se la capra non è sazia lo avrebbe ucciso. La capra mangiò a volontà ma alla domanda del padrone se si fosse saziata essa rispose: A digiuno tutto il giorno, con la fune stretta al collo, sotto un albero d’ulivo dal mattino al mio ritorno. Così morì il primo e il secondo.
     Il terzo furbo lasciò veramente la capra a digiuno ma disse sempre la stessa storia.
     Così il padre stesso portò la capra a pascolo e fu la stessa storia. In fine il padre si accorse dell'enorme errore che ha fatto.`.trim(),
     grimmsSummary: `

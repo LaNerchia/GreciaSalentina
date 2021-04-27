@@ -2,24 +2,31 @@
   <div class="">
     <AppHeader />
     <main class="main">
-      <section id="page-start" class="section__text section__text--left">
-        <app-text-header
-          class="text__header--left"
-          content="E guscia fsematara"
-        >
-          <figure class="figure figure--goat" />
-        </app-text-header>
+      <section
+        id="page-start"
+        class="section__text section__text--left"
+      >
+        <a href="https://www.ciuricepedi.it/fiaba-16-e-guscia-fsematara/">
+          <app-text-header
+            class="text__header--left"
+            content="E guscia fsematara"
+          >
+            <figure class="figure figure--goat" />
+          </app-text-header>
+        </a>
         <AppParagraph>
           {{ mainData.grikoSummary }}
         </AppParagraph>
       </section>
       <section class="section__text section__text--right">
-        <app-text-header
-          class="text__header--right"
-          content="Il tavolino magico, l'asino d'oro e il randello castigamatti"
-        >
-          <figure class="figure figure--grimms" />
-        </app-text-header>
+        <a href="https://www.grimmstories.com/it/grimm_fiabe/il_tavolino_magico_asino_oro_e_randello_castigamatti">
+          <app-text-header
+            class="text__header--right"
+            content="Il tavolino magico, l'asino d'oro e il randello castigamatti"
+          >
+            <figure class="figure figure--grimms" />
+          </app-text-header>
+        </a>
         <AppParagraph>
           {{ mainData.grimmsSummary }}
         </AppParagraph>
@@ -46,13 +53,13 @@ import { mapState } from "vuex";
 import AppHeader from "@/components/AppHeader.vue";
 import AppTextHeader from "@/components/AppTextHeader.vue";
 import AppParagraph from "~/components/AppParagraph.vue";
-import AppFooter from '@/components/AppFooter.vue';
+import AppFooter from "@/components/AppFooter.vue";
 
 export default Vue.extend({
   components: {
     AppHeader,
     AppParagraph,
-    'app-text-header': AppTextHeader,
+    "app-text-header": AppTextHeader,
     AppFooter,
   },
   computed: {
@@ -172,7 +179,7 @@ export default Vue.extend({
     }
   }
   .section__text {
-    font-size: .7rem;
+    font-size: 0.7rem;
 
     &--right {
       text-align: center;
@@ -182,7 +189,7 @@ export default Vue.extend({
       text-align: center;
     }
 
-    margin-top: 2rem ;
+    margin-top: 2rem;
   }
 }
 </style>
