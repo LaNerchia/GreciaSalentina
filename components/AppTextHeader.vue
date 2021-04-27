@@ -26,8 +26,8 @@ export default {
   padding: 2rem 4rem;
   background: linear-gradient(
     to right bottom,
-    rgba(#11698e, 0.85),
-    rgba(#16c79a, 0.85)
+    rgba(#11698e, 1),
+    rgba(#16c79a, 1)
   );
   transform: skewX(-16deg);
 }
@@ -44,6 +44,20 @@ export default {
     color: #fff;
     margin: .5rem;
     margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .body {
+    width: 100vw;
+    transform: skewX(0);
+  }
+
+  .content {
+    transform: skewX(0);
+    & h3 {
+      margin: 0;
+    }
   }
 }
 </style>

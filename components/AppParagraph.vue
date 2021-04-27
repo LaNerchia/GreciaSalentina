@@ -8,6 +8,12 @@
 p {
   font-family: "Raleway";
   font-size: 2.5vmin;
-  width: 60%;
+  width: 85%;
+}
+
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 4vmin;
+  }
 }
 </style>

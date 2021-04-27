@@ -15,6 +15,7 @@
         Salentina
       </span>
     </h1>
+    <a href="#page-start"><img src="~/assets/down.svg" class="down"></a>
   </section>
 </template>
 
@@ -25,6 +26,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.down {
+  z-index: 1000;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 80%;
+  left: 50%;
+  display: none;
+}
+
 .masthead {
   display: flex;
   justify-content: center;
@@ -90,5 +100,15 @@ button:hover {
 button:focus {
   outline: 1px solid #fff;
   outline-offset: -4px;
+}
+
+@media screen and (max-width: 480px) {
+  .masthead {
+    height: 100vh;
+  }
+
+  .down {
+    display: block;
+  }
 }
 </style>

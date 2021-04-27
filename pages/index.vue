@@ -2,10 +2,10 @@
   <div class="">
     <AppHeader />
     <main class="main">
-      <section class="section__text section__text--left">
+      <section id="page-start" class="section__text section__text--left">
         <app-text-header
           class="text__header--left"
-          content="La capra bugiarda"
+          content="E guscia fsematara"
         >
           <figure class="figure figure--goat" />
         </app-text-header>
@@ -24,7 +24,19 @@
           {{ mainData.grimmsSummary }}
         </AppParagraph>
       </section>
+      <section class="section__text section__text--center">
+        <app-text-header
+          class="text__header--center"
+          content="Differenze"
+        />
+        <AppParagraph>
+          {{ mainData.differences }}
+        </AppParagraph>
+      </section>
     </main>
+    <footer>
+      <AppFooter />
+    </footer>
   </div>
 </template>
 
@@ -34,12 +46,14 @@ import { mapState } from "vuex";
 import AppHeader from "@/components/AppHeader.vue";
 import AppTextHeader from "@/components/AppTextHeader.vue";
 import AppParagraph from "~/components/AppParagraph.vue";
+import AppFooter from '@/components/AppFooter.vue';
 
 export default Vue.extend({
   components: {
     AppHeader,
     AppParagraph,
-    "app-text-header": AppTextHeader,
+    'app-text-header': AppTextHeader,
+    AppFooter,
   },
   computed: {
     ...mapState(["mainData"]),
@@ -81,6 +95,10 @@ export default Vue.extend({
     margin-right: 10rem;
     margin-bottom: 5rem;
   }
+  &--center {
+    align-self: center;
+    margin-bottom: 5rem;
+  }
 }
 
 .section__text {
@@ -96,6 +114,9 @@ export default Vue.extend({
 
   &--left {
     text-align: left;
+  }
+  &--center {
+    text-align: center;
   }
 }
 
@@ -128,5 +149,40 @@ export default Vue.extend({
 
 .links {
   padding-top: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .text__header {
+    &--left {
+      align-self: center;
+      margin-left: 0rem;
+    }
+    &--right {
+      align-self: center;
+      margin-right: 0rem;
+    }
+  }
+
+  .figure {
+    &--grimms {
+      display: none;
+    }
+    &--goat {
+      display: none;
+    }
+  }
+  .section__text {
+    font-size: .7rem;
+
+    &--right {
+      text-align: center;
+    }
+
+    &--left {
+      text-align: center;
+    }
+
+    margin-top: 2rem ;
+  }
 }
 </style>
