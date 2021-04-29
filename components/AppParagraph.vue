@@ -11,7 +11,7 @@ p {
   width: 85%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   p {
     font-size: 4vmin;
   }

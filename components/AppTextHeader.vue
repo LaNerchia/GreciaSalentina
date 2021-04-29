@@ -47,7 +47,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .body {
     width: 100vw;
     transform: skewX(0);

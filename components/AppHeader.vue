@@ -68,13 +68,19 @@ h1 {
   }
   & .head--1 {
     font-size: 10vmin;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
   }
   & .head--2 {
     font-weight: 100;
     font-size: 20vmin;
+    animation-name: moveInRight;
+    animation-duration: 1s;
   }
   & .head--3 {
     font-size: 12vmin;
+    animation-name: moveInBottom;
+    animation-duration: 1s;
   }
 }
 
@@ -102,7 +108,7 @@ button:focus {
   outline-offset: -4px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .masthead {
     height: 100vh;
   }
@@ -111,4 +117,49 @@ button:focus {
     display: block;
   }
 }
+
+@keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+    }
+
+    80% {
+      transform: translateX(1rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+@keyframes moveInRight {
+0% {
+    opacity: 0;
+    transform: translateX(10rem);
+}
+
+80% {
+    transform: translateX(-1rem);
+}
+
+100% {
+    opacity: 1;
+    transform: translate(0);
+}
+
+}
+@keyframes moveInBottom {
+0% {
+    opacity: 0;
+    transform: translateY(10rem);
+}
+
+100% {
+    opacity: 1;
+    transform: translate(0);
+}
+}
+
 </style>

@@ -6,11 +6,11 @@
         id="page-start"
         class="section__text section__text--left"
       >
-        <a href="https://www.ciuricepedi.it/fiaba-16-e-guscia-fsematara/">
-          <app-text-header
-            class="text__header--left"
-            content="E guscia fsematara"
-          >
+        <a
+          class="text__header--left"
+          href="https://www.ciuricepedi.it/fiaba-16-e-guscia-fsematara/"
+        >
+          <app-text-header content="E guscia fsematara">
             <figure class="figure figure--goat" />
           </app-text-header>
         </a>
@@ -19,11 +19,11 @@
         </AppParagraph>
       </section>
       <section class="section__text section__text--right">
-        <a href="https://www.grimmstories.com/it/grimm_fiabe/il_tavolino_magico_asino_oro_e_randello_castigamatti">
-          <app-text-header
-            class="text__header--right"
-            content="Il tavolino magico, l'asino d'oro e il randello castigamatti"
-          >
+        <a
+          class="text__header--right"
+          href="https://www.grimmstories.com/it/grimm_fiabe/il_tavolino_magico_asino_oro_e_randello_castigamatti"
+        >
+          <app-text-header content="Il tavolino magico, l'asino d'oro e il randello castigamatti">
             <figure class="figure figure--grimms" />
           </app-text-header>
         </a>
@@ -93,16 +93,30 @@ export default Vue.extend({
 
 .text__header {
   &--left {
+    &:link,
+    &:active {
+      text-decoration: none;
+    }
+    text-decoration: none;
     align-self: flex-start;
     margin-left: 10rem;
     margin-bottom: 5rem;
   }
   &--right {
+    &:link,
+    &:active {
+      text-decoration: none;
+    }
     align-self: flex-end;
     margin-right: 10rem;
     margin-bottom: 5rem;
   }
   &--center {
+    &:link,
+    &:active {
+      text-decoration: none;
+    }
+    text-decoration: none;
     align-self: center;
     margin-bottom: 5rem;
   }
@@ -158,7 +172,7 @@ export default Vue.extend({
   padding-top: 15px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .text__header {
     &--left {
       align-self: center;
