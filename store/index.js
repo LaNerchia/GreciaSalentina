@@ -10,6 +10,13 @@ export const state = () => ({
      i figli, poi si pente di ciò che ha fatto e manda via la capra. Nella seconda il padre apposto di ucciderli li allontana,
      i figli prima di ritornare a casa fanno delle esperienze e
      ognuno ottenne un premio, successivamente i figli tornarono e resero la famiglia fiera di loro.`.trim()
+  },
+  historyData: {
+    introduction: "La Grecìa salentina è un'isola linguistica ellenofona del Salento situata nella Puglia meridionale, in provincia di Lecce, e consistente  in 12 comuni: Calimera, Carpignano  Salentino, Castrignano de' Greci, Corigliano d'Otranto, Cutrofiano, Martano,Martignano, Melpignano, Sogliano Cavour, Soleto, Sternatia, Zollino (comprendente circa 60.000)  in cui si parla un dialetto neo-greco noto come il griko. ",
+    start: "La penetrazione greca nella penisola salentina si ebbe sia in epoca antica, sia con la successiva dominazione bizantina, in particolare con l'emigrazione di molti religiosi nel periodo delle contese e ancora con l'immigrazione massiccia a seguito delle campagne militari dell'imperatore Basilio I, che proseguì anche nei secoli successivi. ",
+    religion: "I numerosi villaggi avevano cultura e lingua greca e praticavano la religione greco-ortodossa. A partire dalla conquista normanna (dall'XI secolo) e ancor più con le successive dominazioni sveva, angioina, aragonese e spagnola, il clero e i monaci cattolici soppiantarono gli ortodossi.",
+    history: "Anche la lingua greca fu progressivamente abbandonata e nel Settecento era ancora parlata solo in tredici villaggi. Dopo la seconda guerra mondiale, sia a causa del fenomeno dell'emigrazione, sia per la diffusione dei mezzi radiotelevisivi, il numero dei parlanti è ancora diminuito.",
+    born: " A partire dagli anni novanta, prende corpo un processo di cooperazione tra i comuni di lingua ellenofona menzionati precedentemente, al fine di valorizzare e promuovere la cultura e le tradizioni griko, e successivamente  ai sensi dell'art. 25 della legge 8 giugno 1990 n. 142, è stato istituito ufficialmente il Consorzio dei comuni della Grecìa Salentina."
   }
 })
 
