@@ -38,6 +38,88 @@
       <AppParagraph>
         {{ mainData.differences }}
       </AppParagraph>
+      <div class="container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">
+                Caratteristiche
+              </th>
+              <th scope="col">
+                Il il tavolino magico asino oro e randello castigamatti
+              </th>
+              <th scope="col">
+                E guscia fsematara
+              </th>
+              <th scope="col">
+                Riflessioni
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                Personaggi
+              </th>
+              <td>/</td>
+              <td>/</td>
+              <td>
+                sono uguali in entrambi solo che in quella dei grimm interviene il locandiere
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Tempo
+              </th>
+              <td>
+                i fatti si svolgono in un tempo più lungo
+              </td>
+              <td>
+                i fatti si svolgono in un tempo più corto
+              </td>
+              <td>/</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Spazio
+              </th>
+              <td>
+                aperto alternato con chiusi
+              </td>
+              <td>
+                aperto alternato a chiusi
+              </td>
+              <td>/</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Elementi magici
+              </th>
+              <td>
+                si
+              </td>
+              <td>
+                no
+              </td>
+              <td>/</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Funzioni di propp
+              </th>
+              <td>
+                allontanamento/partenza/ritorno
+              </td>
+              <td>
+                no
+              </td>
+              <td>
+                nella seconda non c'è un vero e proprio allontamento in quanto i figli muoiono
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
   </main>
 </template>
@@ -138,7 +220,7 @@ export default Vue.extend({
   }
 }
 
-.container {
+.container-normal {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;

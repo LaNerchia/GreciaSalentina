@@ -9,6 +9,8 @@
       Lavoro realizzato da un gruppo di studenti della IBE
       <br>
       Realizzato con VUE3, Nuxt, Netlify e un pizzico di bootstrap
+      <br>
+      <a class="repo" href="https://github.com/LaNerchia/GreciaSalentina">GitHub Repository</a>
     </AppParagraph>
   </div>
 </template>
@@ -27,6 +29,16 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
+.repo {
+  &:link, &:visited {
+    text-decoration: none;
+    color: #4a47a3;
+    font-size: 1.6rem;
+    font-family: 'Poppins';
+    font-weight: 400;
+  }
+}
+
 .mainPage {
   flex-direction: column;
   text-align: center;
