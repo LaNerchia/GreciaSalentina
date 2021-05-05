@@ -2,9 +2,9 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Nuxt1',
+    title: 'La grecìa salentina',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'it'
     },
     meta: [{
       charset: 'utf-8'
