@@ -8,6 +8,8 @@
     <AppParagraph id="page-start" class="main__paragraph">
       Lavoro realizzato da un gruppo di studenti della IBE
       <br>
+      Seguito dalla professoressa Nadia Amico
+      <br>
       Realizzato con VUE3, Nuxt, Netlify e un pizzico di bootstrap
       <br>
       <a class="repo" href="https://github.com/LaNerchia/GreciaSalentina">GitHub Repository</a>

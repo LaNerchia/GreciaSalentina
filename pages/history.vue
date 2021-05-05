@@ -46,6 +46,42 @@
         {{ historyData.born }}
       </AppParagraph>
     </section>
+    <section class="section__text section__text--center">
+      <app-text-header
+        content="Il portale del griko"
+        class="text__header--center"
+      />
+      <AppParagraph>
+        {{ salvatoreTommasi.ciuriCePedi }}
+      </AppParagraph>
+      <ul class="list-group">
+        <li
+          v-for="p in salvatoreTommasi.ciuriCePediList"
+          :key="p"
+          class="list-group-item px-5"
+        >
+          {{ p }}
+        </li>
+      </ul>
+    </section>
+    <section class="section__text section__text--left">
+      <app-text-header
+        content="Il manuale per ragazzi"
+        class="text__header--left"
+      />
+      <AppParagraph>
+        {{ salvatoreTommasi.manual }}
+      </AppParagraph>
+    </section>
+    <section class="section__text section__text--right">
+      <app-text-header
+        content="Salvatore Tommasi"
+        class="text__header--right"
+      />
+      <AppParagraph>
+        {{ salvatoreTommasi.life }}
+      </AppParagraph>
+    </section>
   </main>
 </template>
 
@@ -63,6 +99,9 @@ export default Vue.extend({
   computed: {
     ...mapState([
       'historyData'
+    ]),
+    ...mapState([
+      'salvatoreTommasi'
     ])
   }
 })
@@ -94,7 +133,6 @@ export default Vue.extend({
     align-self: flex-end;
     margin-right: 10rem;
     margin-bottom: 5rem;
-
   }
   &--center {
     &:link,
@@ -103,7 +141,9 @@ export default Vue.extend({
     }
     text-decoration: none;
     align-self: center;
+    margin-top: 10rem;
     margin-bottom: 5rem;
+    padding: 2rem 7rem;
   }
 }
 
